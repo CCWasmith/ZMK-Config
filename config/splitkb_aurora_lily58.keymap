@@ -13,22 +13,6 @@
     combos {
         compatible = "zmk,combos";
     };  
-
-        conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        }; 
-        };
-
-        conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <lower_layer raise_layer>;
-            then-layer = <3>;
-        }; 
-        };
         
 
     keymap {
