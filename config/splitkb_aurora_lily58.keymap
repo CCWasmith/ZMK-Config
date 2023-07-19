@@ -12,19 +12,24 @@
 / {
     combos {
         compatible = "zmk,combos";
+    };  
 
-        Combo_10 {
-            bindings = <&tog 3>;
-            key-positions = <52 55>;
-            layers = <3>;
+        conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <lower_layer raise_layer>;
+            then-layer = <3>;
+        }; 
         };
 
-        new_combo {
-            bindings = <&tog 0>;
-            key-positions = <54 53>;
-            layers = <0>;
+        conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <lower_layer raise_layer>;
+            then-layer = <3>;
+        }; 
         };
-    };
+        
 
     keymap {
         compatible = "zmk,keymap";
@@ -43,7 +48,7 @@
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
             // |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
             // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
+            //                     | ALT  | GUI  | LOWER| ENTER |  | SPACE | RAISE| BSPC  | GUI   |
 
 >>>>>>> beb1a4838e416a87c1b9a964956ff5452eeb820b
             bindings = <
