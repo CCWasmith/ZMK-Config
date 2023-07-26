@@ -46,8 +46,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>; 
         };
 
         lower_layer {
@@ -94,7 +94,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                           &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                           &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0       &kp PERIOD           &tog 0
+                        &trans  &trans  &trans  &trans  &kp N0           &kp PERIOD  &kp BSPC     &tog default_layer
             >;
         };
     };
