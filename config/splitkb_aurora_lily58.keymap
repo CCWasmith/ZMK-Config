@@ -31,7 +31,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp PG_UP PG_DN>;
+                <&inc_dec_kp DOWN UP_ARROW>;
         };
 
         lower_layer {
@@ -50,7 +50,9 @@
                                                             &trans        &trans        &trans  &trans  &trans     &trans     &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings =
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         raise_layer {
@@ -85,9 +87,9 @@
 };
 
 &left_encoder {
-    resolution = <1>; // Default is 4
+    resolution = <1>;// Default is 4
 };
 
 &right_encoder {
-    resolution = <1>; // Default is 4
+    resolution = <1>;// Default is 4
 };
